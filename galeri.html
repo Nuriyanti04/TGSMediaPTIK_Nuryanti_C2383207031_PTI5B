@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Etika Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #fafbff;
+        }
+
+        nav {
+            background: #6C63FF;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav .logo {
+            font-weight: 600;
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 18px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 25px;
+            animation: fadeIn 1s ease;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            animation: slideUp 0.7s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card p {
+            padding: 15px;
+            font-weight: 500;
+            color: #444;
+        }
+
+        .btn-back {
+            display: inline-block;
+            background: #6C63FF;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 8px;
+            margin-top: 40px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .btn-back:hover {
+            background: #5a54e6;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes slideUp {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        footer {
+            text-align: center;
+            background: #6C63FF;
+            padding: 12px;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Etika Digital</div>
+        <div>
+            <a href="index.html">Beranda</a>
+            <a href="materi.html">Materi</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="tentang.html">Tentang</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Galeri Edukasi Digital</h1>
+
+        <div class="gallery">
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2020/06/10/21/25/social-media-5281993_1280.png" alt="Etika Online">
+                <p>Berpikir sebelum mengirim pesan atau komentar di internet 💬</p>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2021/03/23/11/33/digital-6119616_1280.png" alt="Internet Safety">
+                <p>Gunakan media sosial dengan bijak dan sopan 🤝</p>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2021/08/04/16/07/online-6522205_1280.png" alt="Etika Media Sosial">
+                <p>Hargai pendapat orang lain meskipun berbeda 🧠</p>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2021/09/22/11/18/internet-6648898_1280.png" alt="Digital Awareness">
+                <p>Jangan sebarkan hoaks atau informasi palsu 🚫</p>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2020/08/20/14/09/friends-5509683_1280.png" alt="Positive Online Community">
+                <p>Ciptakan komunitas online yang positif dan saling mendukung 🌈</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="btn-back">← Kembali</a>
+    </div>
+
+    <footer>
+        © 2025 Blog Etika Komunikasi Digital | Galeri Edukasi
+    </footer>
+
+</body>
+</html>

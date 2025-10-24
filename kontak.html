@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak & Saran</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #fafbff;
+        }
+
+        nav {
+            background: #6C63FF;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav .logo {
+            font-weight: 600;
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 18px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 25px;
+            animation: fadeIn 1s ease;
+        }
+
+        .contact-box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+            animation: slideUp 0.7s ease;
+        }
+
+        .contact-box p {
+            font-weight: 500;
+            color: #555;
+        }
+
+        .contact-box a {
+            color: #6C63FF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .btn-back {
+            display: inline-block;
+            background: #6C63FF;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .btn-back:hover {
+            background: #5a54e6;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes slideUp {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        footer {
+            text-align: center;
+            background: #6C63FF;
+            padding: 12px;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Etika Digital</div>
+        <div>
+            <a href="index.html">Beranda</a>
+            <a href="materi.html">Materi</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="tips.html">Tips</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Kontak & Saran Pembaca</h1>
+
+        <div class="contact-box">
+            <p>Jika kamu memiliki pertanyaan, kritik, atau saran, silakan kirim email ke:</p>
+            <p><a href="mailto:etikadigital@example.com">etikadigital@example.com</a></p>
+        </div>
+
+        <div class="contact-box">
+            <p>Atau hubungi melalui media sosial:</p>
+            <p>
+                Instagram: <a href="#">@etikadigital</a> | Twitter: <a href="#">@etikadigital</a>
+            </p>
+        </div>
+
+        <a href="index.html" class="btn-back">← Kembali</a>
+    </div>
+
+    <footer>
+        © 2025 Blog Etika Komunikasi Digital | Kontak & Saran
+    </footer>
+
+</body>
+</html>
